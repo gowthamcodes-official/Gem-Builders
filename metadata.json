@@ -1,0 +1,6 @@
+{
+  "name": "GEM Builders & Developers",
+  "description": "Premium construction, 2D/3D planning, architecture and estimation services by GEM Builders & Developers in Salem, Tamil Nadu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Dancing+Script:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Cormorant Garamond", "Playfair Display", "Georgia", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-cursive: "Dancing Script", "Playball", cursive;
+
+  /* Remap colors to elegant gold & dark palette */
+  --color-gold: #D4AF37;
+  --color-gold-hover: #B8962E;
+  --color-gold-accent: #F9E29C;
+  --color-amber-50: #FCF9EE;
+  --color-amber-100: #F7EECF;
+  --color-amber-200: #EEDFA3;
+  --color-amber-300: #E2CC71;
+  --color-amber-400: #D4AF37;
+  --color-amber-500: #D4AF37;
+  --color-amber-600: #B8962E;
+  --color-amber-700: #937420;
+  --color-amber-800: #755B1A;
+  --color-amber-900: #5C4615;
+  --color-amber-950: #302409;
+}
+
+/* Custom styles for a premium design feel */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+}
+
+.glow-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
+}
+
+/* Hide scrollbars for sliders while preserving desktop swiping */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
